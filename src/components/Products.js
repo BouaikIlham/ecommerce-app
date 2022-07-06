@@ -45,18 +45,16 @@ const Products = () => {
                 </div>
                 {filter.map((product) => {
                     return (
-                        <>
-                            <div className="col-md-3 mb-4">
-                                <div class="card h-100 text-center p-4" key={product.id}>
-                                    <img src={product.image} class="card-img-top" alt={product.title} height="250px" />
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-o">{product.title.substring(0, 12)}...</h5>
-                                        <p class="card-text lead few-bold">${product.price}</p>
-                                        <a href="20" class="btn btn-outline-dark">Buy Now</a>
-                                    </div>
+                        <div key={product.id} className="col-md-3 mb-4">
+                            <div className="card h-100 text-center p-4" >
+                                <img src={product.image} className="card-img-top" alt={product.title} height="250px" />
+                                <div className="card-body">
+                                    <h5 className="card-title mb-o">{product.title.substring(0, 12)}...</h5>
+                                    <p className="card-text lead few-bold">${product.price}</p>
+                                    <a href="20" className="btn btn-outline-dark">Buy Now</a>
                                 </div>
                             </div>
-                        </>
+                        </div>
                     )
                 })}
             </>

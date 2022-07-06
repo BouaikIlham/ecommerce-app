@@ -3,13 +3,13 @@ import React from 'react';
 const Navbar = () => {
 	return (
 		<div>
-			<nav class="navbar navbar-expand-lg bg-light bg-white py-3 shadow-sm">
-				<div class="container">
-					<a href="20" class="navbar-brand fw-bold fs-4">
+			<nav className="navbar navbar-expand-lg bg-light bg-white py-3 shadow-sm">
+				<div className="container">
+					<a href="20" className="navbar-brand fw-bold fs-4">
 						LA COLLECTION{' '}
 					</a>
 					<button
-						class="navbar-toggler"
+						className="navbar-toggler"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent"
@@ -17,27 +17,27 @@ const Navbar = () => {
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<span className="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a href="20" class="nav-link active" aria-current="page">
+					<div className="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li className="nav-item">
+								<a href="20" className="nav-link active" aria-current="page">
 									Home
 								</a>
 							</li>
-							<li class="nav-item">
-								<a href="20" class="nav-link">
+							<li className="nav-item">
+								<a href="20" className="nav-link">
 									Products
 								</a>
 							</li>
-							<li class="nav-item">
-								<a href="20" class="nav-link">
+							<li className="nav-item">
+								<a href="20" className="nav-link">
 									About
 								</a>
 							</li>
-							<li class="nav-item">
-								<a href="20" class="nav-link">
+							<li className="nav-item">
+								<a href="20" className="nav-link">
 									Contact
 								</a>
 							</li>
