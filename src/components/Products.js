@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Skeleton from 'react-loading-skeleton';
+import { NavLink } from 'react-router-dom';
 
 const Products = () => {
 
@@ -27,9 +27,7 @@ const Products = () => {
     const Loading = () => {
         return (
             <>
-                <div className="col-md-3">
-                    <Skeleton height={350} />
-                </div>
+                <h1 className="loading">Loading ....</h1>
             </>
         )
     }
@@ -61,7 +59,7 @@ const Products = () => {
                                 <div className="card-body">
                                     <h5 className="card-title mb-o">{product.title.substring(0, 12)}...</h5>
                                     <p className="card-text lead few-bold">${product.price}</p>
-                                    <a href="20" className="btn btn-outline-dark">Buy Now</a>
+                                    <NavLink to={`/products/${product.id}`} className="btn btn-outline-dark">Buy Now</NavLink>
                                 </div>
                             </div>
                         </div>
